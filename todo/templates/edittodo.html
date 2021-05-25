@@ -1,0 +1,16 @@
+{% load crispy_forms_tags %}
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h2>Update Todos</h2>
+    <form action={% url 'add'%} method="post" role=form>
+    {%csrf_token%}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-success m-3">Update Todo</button>
+    </form>
+    
+</body>
+</html>

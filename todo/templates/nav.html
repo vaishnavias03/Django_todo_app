@@ -1,0 +1,15 @@
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="navbar-nav">
+      <a class="nav-item nav-link " href= {% url  'todolist' %}>My Todos <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href={% url 'home'%}>Add Todo</a>
+      {% comment %} <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> {% endcomment %}
+    </div>
+</nav>
+{% endblock %}
+
+
+
